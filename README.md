@@ -1,10 +1,12 @@
 # 🎟️ Event Ticket Reservation System Using JSP & Servlet
 
 ## 📌 Project Objective
+
         This project is a simple web application built with **Java Servlets, JSP, and JDBC** to manage event ticket reservations.  
         It demonstrates layered architecture with **Bean → DAO → Service → Servlet → JSP**, ensuring clean separation of concerns and maintainability.
 
 ## ✨ Features
+
         - Add new event ticket reservations (customer info, event name, date, category, ticket number, remarks).
         - View a specific reservation by customer name and event date.
         - View all reservations stored in the database.
@@ -12,6 +14,7 @@
         - Simple JSP/HTML pages for user interaction.
   
 ## 🏗️ Project Structure
+
             EventTicketReservationSystem/
             ├── src/main/java
             │    ├── com.wipro.event.util
@@ -39,15 +42,18 @@
             └── lib/ (JDBC driver here)
 🖥️ Usage
 Home Page: menu.html
+
           Add Event Ticket Reservation → addEventReservation.jsp
           View Event Ticket Reservation → viewEventReservation.jsp
           View All Event Reservations → viewAllEventReservations.jsp
 Flow:
+
           Add record → success.html / error.html
           View record → displayEventReservation.jsp (or “No matching records exists!”)
           View all records → displayAllEventReservations.jsp (or “No records available!”)
 
 🧪 Sample Test Cases
+
           Add reservation with valid values → ✅ success.html
           Add reservation with invalid customer name (<2 chars) → ❌ error.html
           Add reservation with null values → ❌ error.html
@@ -58,6 +64,7 @@ Flow:
           View all reservations when DB empty → ❌ “No records available!”
 
 📚 Technologies Used
+
           Java (Servlets, JSP, JDBC)
           Oracle Database
           Apache Tomcat
